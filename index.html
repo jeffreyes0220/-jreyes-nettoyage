@@ -184,29 +184,29 @@
           <p data-i18n="quote_text">Send a few details and we’ll make it easy to start the conversation.</p>
         </div>
 
-        <form class="quote-form" id="quoteForm">
+        <form class="quote-form" id="quoteForm" action="https://formspree.io/f/xnpnqreg" method="POST">
           <label>
             <span data-i18n="form_name">Name</span>
-            <input type="text" id="name" required />
+            <input type="text" id="name" name="name" required />
           </label>
           <label>
             <span data-i18n="form_company">Company</span>
-            <input type="text" id="company" />
+            <input type="text" id="company" name="company" />
           </label>
           <label>
             <span data-i18n="form_email">Email</span>
-            <input type="email" id="email" required />
+            <input type="email" id="email" name="email" required />
           </label>
           <label>
             <span data-i18n="form_phone">Phone</span>
-            <input type="tel" id="phone" />
+            <input type="tel" id="phone" name="phone" />
           </label>
           <label class="full">
             <span data-i18n="form_message">What would you like cleaned?</span>
-            <textarea id="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" required></textaria>
           </label>
           <button class="btn btn-light full" type="submit" data-i18n="form_submit">Send Quote Request</button>
-          <p class="form-note full" data-i18n="form_note">This opens your email app with your request ready to send.</p>
+          <p class="form-note full" data-i18n="form_note">Submit the form and we'll get back to you as soon as possible.</p>
         </form>
       </div>
     </section>
